@@ -10,7 +10,7 @@ var writeJsonResponse = function (res, str) {
     writeResponse(res, JSON.stringify(str));
 }
 
-apis = "Version 1.2\n/getcustomerbycustomerid/nnn\n/getcustomers\n/getorders\n/getordersbycustomerid/nnn\n/getorderdetailsbyorderid/nnn"
+apis = "Version 1.3\n/getcustomerbycustomerid/nnn\n/getcustomers\n/getorders\n/getordersbycustomerid/nnn\n/getorderdetailsbyorderid/nnn"
 var writeHelp = function (res) {
     res.writeHead(404, { 'Content-Type': 'text/plain' });
     res.end(apis);
